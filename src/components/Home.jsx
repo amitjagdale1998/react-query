@@ -30,8 +30,9 @@ const Home = () => {
     "profile-fetch",
     () => {
       return axios.get("http://localhost:4000/profile", {
-        cacheTime: 5000, //default time 5 min
-        stsaleTime: 3000, //recat query rfresh after 30 second
+        // cacheTime: 5000, //default time 5 min
+        // stsaleTime: 3000, //recat query rfresh after 30 second
+        refetchOnMount: false,
       });
     }
   );
